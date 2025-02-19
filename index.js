@@ -27,3 +27,16 @@ function reverseString(str) {
     }
     return newString;
 }
+
+//Function to store the password
+function storePassword(x,y,z){
+    user=x;
+    if(validatePassword(y,z)===true){
+        newpassword=reverseString(y);
+    }else{
+        newpassword=y
+    }
+    console.log("name: "+user+" , newpassword: "+newpassword)
+}
+
+storePassword("john","Hello1234","Hello12345");
